@@ -11,3 +11,37 @@ body
 {
 	background: url(bg.jpg) 60% 60%/cover no-repeat;
 }
+body > *
+{
+	flex-shrink: 0;
+}
+body::-webkit-scrollbar
+{
+	display: none;
+}
+
+#navspace
+{
+	width: 100%;
+	display: flex; justify-content: flex-end;
+}
+nav
+{
+	width: max(calc(45% - 1.5em), 300px);
+	margin-right: 30px; padding: 0.75em 1.5em;
+	
+	display: inline-flex; align-items: center; column-gap: 10px;
+
+	background-color: rgba(29, 111, 147, 0.332);
+
+	border-radius: 0 0 1.5em 1.5em;
+}
+nav > *
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+nav > :first-child
+{
+	margin-right: auto;
+}

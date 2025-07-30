@@ -22,6 +22,7 @@ body::-webkit-scrollbar
 
 #navspace
 {
+	position: absolute;
 	width: 100%;
 	display: flex; justify-content: flex-end;
 }
@@ -44,4 +45,45 @@ nav > *
 nav > :first-child
 {
 	margin-right: auto;
+}
+nav > a > button
+{
+	padding: 5px 10px;
+
+	color: whitesmoke;
+	font-weight: 500;
+
+	background-color: unset;
+
+	border: 2px solid whitesmoke;
+	border-radius: 1em;
+
+	cursor: pointer;
+
+	transition: color, background-color, border-color
+		0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav > a > button:hover
+{
+
+	color: rgb(0, 137, 195);
+	background-color: whitesmoke;
+	border: 2px solid rgb(0, 137, 195);
+}
+content
+{
+	display: flex;
+}
+main
+{
+	height: 100dvh; width: 62%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: whitesmoke;
+	font-size: 3.6em;
+
+	overflow-x: hidden;
 }

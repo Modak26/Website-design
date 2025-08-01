@@ -76,7 +76,7 @@ content
 }
 main
 {
-	height: 100dvh; width: 62%;
+	height: 100dvh; width: 60%;
 
 	display: flex;
 	justify-content: center;
@@ -86,4 +86,22 @@ main
 	font-size: 3.6em;
 
 	overflow-x: hidden;
+}
+options
+{
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+#options_panel
+{
+	width: min(100%, 400px); height: 500px;
+
+	background-color: rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(10px);
+	
+	border-radius: 1.5em 0 0 1.5em;
+
+	overflow: hidden;
 }

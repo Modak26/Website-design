@@ -87,12 +87,48 @@ main
 
 	overflow-x: hidden;
 }
+main > *
+{
+	animation: transr 0.75s ease-out 0s 1;
+}
+@keyframes transr
+{
+	0%
+	{
+		transform: translateX(-120%);
+		opacity: 0.4;
+	}
+	
+	70%
+	{
+		transform: translateX(-120%);
+		opacity: 0.4;
+	}
+
+	100%
+	{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
 options
 {
 	width: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+}
+options > *
+{
+	animation: transl 0.75s ease-out 0s 1;
+}
+@keyframes transl
+{
+	0%{transform: translateX(120%);}
+	
+	70%{transform: translateX(120%);}
+
+	100%{transform: translateX(0%);}
 }
 #options_panel
 {
@@ -144,6 +180,8 @@ options
 	font-weight: 500;
 
 	border-bottom: 2px solid lightgray;
+
+	transition: transform 0.2s ease;
 }
 #options_panel > :last-child > :only-child > :last-child
 {
@@ -151,6 +189,8 @@ options
 }
 #options_panel > :last-child > :only-child > *:hover
 {
+	transform: scale(1.1);
+
 	color: teal;
 	text-shadow: none;
 

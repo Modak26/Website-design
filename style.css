@@ -181,6 +181,8 @@ options > *
 
 	border-bottom: 2px solid lightgray;
 
+	cursor: pointer;
+
 	transition: transform 0.2s ease;
 }
 #options_panel > :last-child > :only-child > :last-child

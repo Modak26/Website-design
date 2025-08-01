@@ -83,7 +83,7 @@ main
 	align-items: center;
 
 	color: whitesmoke;
-	font-size: 3.6em;
+	font-size: 4.5vw;
 
 	overflow-x: hidden;
 }
@@ -96,12 +96,63 @@ options
 }
 #options_panel
 {
-	width: min(100%, 400px); height: 500px;
+	width: min(100%, 400px); height: 300px;
 
-	background-color: rgba(0, 0, 0, 0.35);
+	display: flex;
+	flex-direction: column;
+
+	background-color: rgba(166, 166, 166, 0.121);
 	backdrop-filter: blur(10px);
-	
+
 	border-radius: 1.5em 0 0 1.5em;
 
 	overflow: hidden;
+}
+#options_panel > :first-child
+{
+	width: 100%;
+	height: max(10%, 1.5em);
+
+	display: flex;
+	align-items: center;
+}
+#options_panel > :first-child > :first-child
+{
+	margin: 0;
+	margin-top: 1%;
+	margin-left: 1.5em;
+}
+
+#options_panel > :last-child
+{
+	height: calc(100% - max(10%, 1.5em));
+
+	display: flex;
+	flex-direction: column;
+}
+#options_panel > :last-child > :only-child
+{
+	height: 100%;
+}
+#options_panel > :last-child > :only-child > *
+{
+	height: 25%; width: 90%;
+	
+	display: flex;
+	align-items: center;
+
+	font-weight: 500;
+
+	border-bottom: 2px solid lightgray;
+}
+#options_panel > :last-child > :only-child > :last-child
+{
+	border-bottom: none;
+}
+#options_panel > :last-child > :only-child > *:hover
+{
+	color: teal;
+	text-shadow: none;
+
+	background-color: lightgray;
 }

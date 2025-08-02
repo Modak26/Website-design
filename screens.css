@@ -1,7 +1,14 @@
 @media (max-width: 580px)
 {
+
 content
 {
-flex-direction: column;
+	flex-direction: column;
 }
+
+main
+{
+	height: 20vh;
+}
+
 }

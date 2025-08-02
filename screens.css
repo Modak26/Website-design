@@ -1,4 +1,7 @@
 @media (max-width: 580px)
 {
-
+content
+{
+flex-direction: column;
+}
 }

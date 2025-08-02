@@ -172,11 +172,12 @@ options > *
 }
 #options_panel > :last-child > :only-child > *
 {
-	height: 25%; width: 90%;
-	
+	height: 25%; width: 80%;
+	padding-left: 5%;
 	display: flex;
 	align-items: center;
 
+	font-size: 1.2em;
 	font-weight: 500;
 
 	border-bottom: 2px solid lightgray;
@@ -197,4 +198,7 @@ options > *
 	text-shadow: none;
 
 	background-color: lightgray;
+
+	border: none;
+	border-radius: 1.5em;
 }
